@@ -26,6 +26,10 @@ html {
   border-radius: 20px;
 }
 
+section {
+  margin-top: 100px;
+}
+
 .hero {
   display: grid;
   grid-template: 60vh 40vh/80%;
@@ -33,10 +37,38 @@ html {
   align-items: center;
 }
 
+.section1 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 10% 100px 10%;
+}
+
+h2 {
+  font-size: 6rem;
+  margin-bottom: 150px;
+}
+
 h1 {
   text-align: center;
   font-size: 6rem;
   margin-bottom: 150px;
+}
+
+.section2 {
+  display: grid;
+  grid-template: 40vh 40vh/80%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: black;
+  color: white;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */
