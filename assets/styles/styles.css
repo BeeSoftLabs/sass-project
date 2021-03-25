@@ -17,8 +17,10 @@ html {
     font-family: "Inter var", sans-serif;
   }
 }
-h1 {
-  color: #000;
+.page_images {
+  width: 288px;
+  height: 190px;
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */
