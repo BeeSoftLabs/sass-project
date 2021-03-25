@@ -11,45 +11,76 @@
 <body>
     <header id="header_container">
         <section id="section_header_container">
-            <img src="/assets/images/favicon.svg" alt="img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Gear_icon_svg.svg/1028px-Gear_icon_svg.svg.png"
+                 alt="img"
+                 id="mainLogo"
+                 width="50px"
+                 height="50px"
+            >
             <h1>Lorem ipsum</h1>
             <h2>lorem ipsum for photos</h2>
         </section>
-        <img src="1500/2000" class="page_images" alt="header_image">
+        <figure>
+            <img src="1500/2000?random=1" class="page_images" alt="header_image">
+        </figure>
     </header>
-    <section>
+
+    <section id="second_header_container">
         <h1>Easy to use, stylish placeholders</h1>
         <p>Just add your desired image size (width & height) after our URL, and you'll get a random image.</p>
         <p>To get a square image, just add the size.</p>
     </section>
-    <main>
-        <article>
+
+    <main id="main_container">
+
+        <article class="articles_container_one">
             <h2>Specify image</h2>
             <p>Get a specific image by adding /id/{image} to the start of the url.</p>
             <p>You can find a list of all the images here.</p>
-            <img src="1500/2000" class="page_images" alt="img">
+            <figure>
+                <img src="1500/2000?random=2" class="page_images" alt="img">
+            </figure>
         </article>
-        <article>
+
+        <article class="articles_container_two">
             <h2>Static Random Image</h2>
             <p>Get the same random image every time based on a seed, by adding /seed/{seed} to the start of the url.</p>
-            <img src="1500/2000" class="page_images" alt="img">
+            <figure>
+                <img src="1500/2000?random=3" class="page_images" alt="img">
+            </figure>
         </article>
-        <article>
+
+        <article class="articles_container_three">
             <h2>Grayscale</h2>
             <p>Get a grayscale image by appending ?grayscale to the end of the url.</p>
-            <img src="1500/2000" class="page_images" alt="img">
+            <figure>
+                <img src="1500/2000?random=4" class="page_images" alt="img">
+            </figure>
         </article>
-        <article>
+
+        <article class="articles_container_four">
             <h2>Blur</h2>
             <p>You can adjust the amount of blur by providing a number between 1 and 10. </p>
-            <img src="1500/2000" class="page_images" alt="img">
+            <figure>
+                <img src="1500/2000?random=5" class="page_images" alt="img">
+            </figure>
         </article>
-        <article>
+
+        <article class="articles_container_five">
             <h2>Advanced Usage</h2>
             <p>You may combine any of the options above. For example, to get a specific image that is grayscale and
                 blurred.</p>
-            <img src="1500/2000" class="page_images" alt="img">
+            <figure>
+                <img src="1500/2000?random=6" class="page_images" alt="img">
+            </figure>
         </article>
     </main>
+
+    <footer>
+        <p>Created by David Marby & Nijiko Yonskai</p>
+        <p>Source</p>
+        <p>Having trouble? Poke @DMarby on twitter</p>
+        <p>Images from Unplash</p>
+    </footer>
 </body>
 </html>

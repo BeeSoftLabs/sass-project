@@ -1,0 +1,13 @@
+footer{
+  display: grid;
+  background-color: $footerMainColor;
+  margin-top: 6.25rem;
+  padding: 6.25rem 0 6.25rem 0;
+  p{
+    color: $footerParaphColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
