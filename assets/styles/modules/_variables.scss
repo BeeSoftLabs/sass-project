@@ -4,9 +4,13 @@ $secondHeaderContainer :#f4f7fc;
 $footerMainColor: black;
 $footerParaphColor: white;
 
-//All images width and height
+//375 image sizes
 $imageWidth: 288px;
 $imageHeight: 190px;
+
+//768 image sizes
+$imageNewWidthIpad: 536px;
+$imageNewHeightIpad: 354px;
 
 //images spaces
 $imagePadding: 1rem;

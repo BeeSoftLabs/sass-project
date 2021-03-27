@@ -8,9 +8,9 @@
     padding: 0;
     border-radius: 8px;
   }
-  img:last-child{ //IMPORTANTE
+ /* img:last-child{ //IMPORTANTE PREGUNTAR A DAVID
     height: 200px;
-  }
+  }*/
   img:nth-last-child(1){ //IMPORTANTE
     filter: blur(0.2px);
   }

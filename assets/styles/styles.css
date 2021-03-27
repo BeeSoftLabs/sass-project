@@ -8,6 +8,12 @@
   text-rendering: optimizeLegibility;
 }
 
+@media (min-width: 768px) {
+  figure .page_images {
+    width: 536px;
+    height: 354px;
+  }
+}
 html {
   font-family: "Inter", sans-serif;
 }
@@ -23,13 +29,13 @@ html {
   padding: 6.25rem 0 6.25rem 0;
   place-items: center;
   justify-content: center;
+  /* img:last-child{ //IMPORTANTE PREGUNTAR A DAVID
+     height: 200px;
+   }*/
 }
 #header_container img {
   padding: 0;
   border-radius: 8px;
-}
-#header_container img:last-child {
-  height: 200px;
 }
 #header_container img:nth-last-child(1) {
   filter: blur(0.2px);
@@ -93,11 +99,14 @@ html {
   margin: 5rem 0 4rem 0;
 }
 #main_container .articles_container_one h2 {
-  font-weight: 600;
   margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+#main_container .articles_container_one figure {
+  margin-top: 1rem;
 }
 #main_container .articles_container_one figure img {
-  padding: 16px 16px 0 16px;
+  border-radius: 8px;
 }
 #main_container .articles_container_two {
   padding: 0 1rem 0 1rem;
@@ -107,8 +116,11 @@ html {
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
+#main_container .articles_container_two figure {
+  margin-top: 1rem;
+}
 #main_container .articles_container_two figure img {
-  padding: 16px 16px 0 16px;
+  border-radius: 8px;
 }
 #main_container .articles_container_three {
   padding: 0 1rem 0 1rem;
@@ -118,8 +130,11 @@ html {
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
+#main_container .articles_container_three figure {
+  margin-top: 1rem;
+}
 #main_container .articles_container_three figure img {
-  padding: 16px 16px 0 16px;
+  border-radius: 8px;
 }
 #main_container .articles_container_four {
   padding: 0 1rem 0 1rem;
@@ -129,19 +144,25 @@ html {
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
-#main_container .articles_container_four figure img {
-  padding: 16px 16px 0 16px;
+#main_container .articles_container_four figure {
+  margin-top: 1rem;
 }
-#main_container .articles_container_five {
+#main_container .articles_container_four figure img {
+  border-radius: 8px;
+}
+#main_container .articles_container_one {
   padding: 0 1rem 0 1rem;
   margin: 5rem 0 4rem 0;
 }
-#main_container .articles_container_five h2 {
+#main_container .articles_container_one h2 {
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
-#main_container .articles_container_five figure img {
-  padding: 16px 16px 0 16px;
+#main_container .articles_container_one figure {
+  margin-top: 1rem;
+}
+#main_container .articles_container_one figure img {
+  border-radius: 8px;
 }
 
 footer {
