@@ -10,4 +10,34 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .article_left{
+    margin:0 auto;
+    height: 50vh;
+    display: grid;
+    grid: 100px auto 100px / repeat(2, 50%);
+    grid-template-areas:
+      "text image";
+    .text_container{
+      grid-area: text;
+    }
+    .img_container{
+      grid-area: image;
+    }
+  }
+
+  .article_right{
+    margin:0 auto;
+    height: 50vh;
+    display: grid;
+    grid: 100px auto 100px / repeat(2, 50%);
+    grid-template-areas:
+      "image text";
+    .img_container{
+      grid-area: image;
+    }
+    .text_container{
+      grid-area:text;
+    }
+  }
+}

@@ -33,32 +33,39 @@
 
     <main id="main_container">
 
-        <article class="articles_container_one">
-            <h2>Specify image</h2>
-            <p>Get a specific image by adding /id/{image} to the start of the url.</p>
-            <p>You can find a list of all the images here.</p>
-            <figure>
+        <article class="article_left articles_container_one">
+            <section class="text_container">
+                <h2>Specify image</h2>
+                <p>Get a specific image by adding /id/{image} to the start of the url.</p>
+                <p>You can find a list of all the images here.</p>
+            </section>
+            <figure class="img_container">
                 <img src="1500/2000?random=2" class="page_images" alt="img">
             </figure>
+
         </article>
 
-        <article class="articles_container_two">
-            <h2>Static Random Image</h2>
-            <p>Get the same random image every time based on a seed, by adding /seed/{seed} to the start of the url.</p>
-            <figure>
+        <article class="article_right articles_container_two">
+            <section class="text_container">
+                <h2>Static Random Image</h2>
+                <p>Get the same random image every time based on a seed, by adding /seed/{seed} to the start of the url.</p>
+            </section>
+            <figure class="img_container">
                 <img src="1500/2000?random=3" class="page_images" alt="img">
             </figure>
         </article>
 
-        <article class="articles_container_three">
-            <h2>Grayscale</h2>
-            <p>Get a grayscale image by appending ?grayscale to the end of the url.</p>
-            <figure>
+        <article class="article_left articles_container_three">
+            <section class="text_container">
+                <h2>Grayscale</h2>
+                <p>Get a grayscale image by appending ?grayscale to the end of the url.</p>
+            </section>
+            <figure class="img_container">
                 <img src="1500/2000?random=4" class="page_images" alt="img">
             </figure>
         </article>
 
-        <article class="articles_container_four">
+        <article class="article_right articles_container_four">
             <h2>Blur</h2>
             <p>You can adjust the amount of blur by providing a number between 1 and 10. </p>
             <figure>
@@ -66,7 +73,7 @@
             </figure>
         </article>
 
-        <article class="articles_container_five">
+        <article class="article_left articles_container_five">
             <h2>Advanced Usage</h2>
             <p>You may combine any of the options above. For example, to get a specific image that is grayscale and
                 blurred.</p>

@@ -14,6 +14,35 @@
     height: 354px;
   }
 }
+@media (min-width: 992px) {
+  .article_left {
+    margin: 0 auto;
+    height: 50vh;
+    display: grid;
+    grid: 100px auto 100px/repeat(2, 50%);
+    grid-template-areas: "text image";
+  }
+  .article_left .text_container {
+    grid-area: text;
+  }
+  .article_left .img_container {
+    grid-area: image;
+  }
+
+  .article_right {
+    margin: 0 auto;
+    height: 50vh;
+    display: grid;
+    grid: 100px auto 100px/repeat(2, 50%);
+    grid-template-areas: "image text";
+  }
+  .article_right .img_container {
+    grid-area: image;
+  }
+  .article_right .text_container {
+    grid-area: text;
+  }
+}
 html {
   font-family: "Inter", sans-serif;
 }
