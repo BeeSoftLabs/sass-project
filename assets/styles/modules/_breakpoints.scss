@@ -2,7 +2,121 @@
 @import "variables";
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+
+  .hero{
+    margin: 0 auto;
+    height: 90vh;
+    display: grid;
+    grid: auto / repeat(2, 50%);
+    grid-template-areas:
+    "text img";
+
+    .container-hero{
+      grid-area: text;
+
+    }
+    .images {
+      grid-area: img;
+      padding: 1rem 1rem 0 1rem;
+    }
+  }
+  .type-container1{
+    margin: 0 auto;
+    height: 50vh;
+    display: grid;
+    grid: 100px auto 100px / repeat(2, 50%);
+    grid-template-areas:
+    "text img";
+
+    .section-text{
+      grid-area: text;
+    }
+
+    .images{
+      grid-area: img;
+      padding: 1rem 1rem 0 1rem;
+
+    }
+  }
+
+  .type-container2{
+    margin: 0 auto;
+    height: 50vh;
+    //width: 90%;
+    display: grid;
+    grid: 100px auto 100px / repeat(2, 50%);
+    grid-template-areas:
+    "img text";
+
+    .section-text{
+      grid-area: text;
+    }
+
+    .images{
+      grid-area: img;
+      padding: 1rem 1rem 0 1rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  .main-container{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid: 100px auto 100px / repeat(2, 50%);
+  }
+  grid-template-areas:
+    "section section"
+    "type-1 type-1"
+    "type-2 type-2"
+    "type-1 type-1"
+    "type-2 type-2"
+    "type-1 type-1";
+
+  .text-main{
+    text-align: center;
+    grid-area: section;
+  }
+
+  .type-1{
+    grid-area: type-1;
+  }
+
+  .type-2{
+    grid-area: type2;
+  }*/
