@@ -1,0 +1,46 @@
+.hero {
+  display: grid;
+  place-items: center;
+  width: 100%;
+
+  .container-hero {
+    margin: 5rem 0;
+    padding: 0 1rem 0 1rem;
+    text-align: center;
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 19px;
+      padding: 0;
+      border: 1px solid black;
+    }
+  }
+
+  .images {
+    width: 80%;
+    .img-hero {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+  }
+
+
+}
+
+
+
+
+

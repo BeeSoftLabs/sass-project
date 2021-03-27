@@ -8,6 +8,86 @@
   text-rendering: optimizeLegibility;
 }
 
+body {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+/*img{
+  max-width: 100%;
+}*/
+@media screen and (min-width: 992px) {
+  .hero {
+    margin: 0 auto;
+    height: 90vh;
+    display: grid;
+    grid: auto/repeat(2, 50%);
+    grid-template-areas: "text img";
+  }
+  .hero .container-hero {
+    grid-area: text;
+  }
+  .hero .images {
+    grid-area: img;
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .type-container1 {
+    margin: 0 auto;
+    height: 50vh;
+    display: grid;
+    grid: 100px auto 100px/repeat(2, 50%);
+    grid-template-areas: "text img";
+  }
+  .type-container1 .section-text {
+    grid-area: text;
+  }
+  .type-container1 .images {
+    grid-area: img;
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .type-container2 {
+    margin: 0 auto;
+    height: 50vh;
+    display: grid;
+    grid: 100px auto 100px/repeat(2, 50%);
+    grid-template-areas: "img text";
+  }
+  .type-container2 .section-text {
+    grid-area: text;
+  }
+  .type-container2 .images {
+    grid-area: img;
+    padding: 1rem 1rem 0 1rem;
+  }
+}
+/*  .main-container{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid: 100px auto 100px / repeat(2, 50%);
+  }
+  grid-template-areas:
+    "section section"
+    "type-1 type-1"
+    "type-2 type-2"
+    "type-1 type-1"
+    "type-2 type-2"
+    "type-1 type-1";
+
+  .text-main{
+    text-align: center;
+    grid-area: section;
+  }
+
+  .type-1{
+    grid-area: type-1;
+  }
+
+  .type-2{
+    grid-area: type2;
+  }*/
 html {
   font-family: "Inter", sans-serif;
 }
@@ -16,6 +96,106 @@ html {
   html {
     font-family: "Inter var", sans-serif;
   }
+}
+.hero {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.hero .container-hero {
+  margin: 5rem 0;
+  padding: 0 1rem 0 1rem;
+  text-align: center;
+}
+.hero .container-hero h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.hero .container-hero p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.hero .container-hero img {
+  width: 80px;
+  height: 80px;
+  border-radius: 19px;
+  padding: 0;
+  border: 1px solid black;
+}
+.hero .images {
+  width: 80%;
+}
+.hero .images .img-hero {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.main-container {
+  display: grid;
+  margin: 0 auto;
+  width: 90%;
+}
+.main-container .text-main {
+  background-color: #F4F7FC;
+  padding: 6.25rem 0;
+  text-align: center;
+}
+.main-container .text-main h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.main-container .text-main p {
+  font-size: 1rem;
+}
+.main-container .type-all {
+  padding: 6.2rem 0 4.2rem;
+  width: 100%;
+}
+.main-container .type-all .section-text h3 {
+  font-size: 1.5rem;
+  margin: 0 0 0.75rem;
+}
+.main-container .type-all .section-text p {
+  font-size: 1rem;
+}
+.main-container .type-all .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem 0 1rem;
+}
+.main-container .type-all .image-container img {
+  width: 80%;
+  height: 15rem;
+  border-radius: 12px;
+}
+
+/*
+ .images{
+  .img-hero{
+    width: $img-width;
+    height: $img-height;
+    max-width: 100%;
+    border-radius: 20px;
+
+  }
+}*/
+footer {
+  display: grid;
+  background-color: #222121;
+  margin-top: 6.25rem;
+  padding: 6.25rem 0;
+}
+footer p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
