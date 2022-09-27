@@ -1,0 +1,95 @@
+@import "../modules/variables";
+@import "../modules/breakpoints";
+@import "../modules/mixins";
+
+
+.main-container {
+    margin: 0;
+    padding: 0;
+
+    &__use-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: $background;
+        text-align: center;
+
+        &__first-section {
+
+            h2 {
+                font-size: 36px;
+                margin-bottom: 18px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.6em;
+            }
+
+            &__light-container {
+                @extend %light-container;
+
+                &__link-a {
+                    @extend %link-a;
+                }
+            }
+        }
+
+    }
+
+    &__opt-container {
+        margin: 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        &__article-container {
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            &__info {
+                text-align: left;
+                padding: 0 16px;
+
+                h2 {
+                    margin-bottom: 18px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 1.6em;
+                }
+
+                &__dark-container {
+                    @extend %dark-container;
+
+                    a {
+                        @extend %link-a;
+                    }
+
+                    code {
+                        color: $colorDark;
+                    }
+                }
+            }
+
+            &__image {
+                padding: 1rem;
+            }
+        }
+    }
+
+}
+
+.footer-section {
+    width: 100%;
+    height: 24rem;
+    background-color: $colorDark;
+    padding: 100px 0;
+    margin-top: 100px;
+
+    &__text {
+        text-align: center;
+        padding: 30px 50px;
+        color: $colorLight;
+    }
+
+}
