@@ -1,0 +1,31 @@
+@mixin text($size, $color, $weight) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}
+
+%link-a {
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+%light-container {
+    width: 100%;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    background: white;
+    padding: 10px auto;
+}
+
+%dark-container {
+    width: 100%;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    background: #EBEEF0;
+    padding: 10px auto;
+}

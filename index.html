@@ -1,12 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" sizes="any">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <!-- picsom base from img tags -->
+    <base href="https://picsum.photos/" target="_blank" />
+    <!-- window icon -->
+    <link rel="icon" href="">
+
     <title>Sass Project</title>
 </head>
+
 <body>
-<h1 class="title">Hello world!</h1>
+    <header class="header-container">
+        <div class="header-container__hero">
+            <div class="header-container__hero__home">
+                <div class="header-container__hero__home__icon-title">
+                    <ion-icon name="images-outline"></ion-icon>
+                    <h1>Lorem Picsum</h1>
+                </div>
+                <p>The Lorem Ipsum for photos</p>
+            </div>
+            <div class="header-container__hero__image">
+                <img src="536/364?random=1" alt="image" />
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="main-container__use-container">
+            <div class="main-container__use-container__first-section">
+                <h2>Easy to use, stylish placeholders</h2>
+                <p>Just add desired image size (width, height) after our URL, and you'll get a random image.</p>
+                <div class="main-container__use-container__first-section__light-container">
+                    <a class="main-container__use-container__first-section__light-container__link-a"
+                        href="#">https://picsum.photos/200/300</a>
+                </div>
+                <p>To get a square image, just add the size</p>
+                <div class="main-container__use-container__first-section__light-container">
+                    <a href="#">https://picsum.photos/200/300</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-container__opt-container">
+            <article class="main-container__opt-container__article-container">
+                <div class="main-container__opt-container__article-container__info">
+                    <h2>Specific Image</h2>
+                    <p>Get a specific image by adding <code>/id/{image}</code> to the start of the url</p>
+                    <div class="main-container__opt-container__article-container__info__dark-container">
+                        <a href="#">https://picsum.photos/id/237/200/300</a>
+                    </div>
+                    <p>You can find a list of all the images <a href="#">here.</a></p>
+                </div>
+
+                <div class="main-container__opt-container__article-container__image">
+                    <img src="536/364?random=2" alt="image" />
+                </div>
+            </article>
+
+            <article class="main-container__opt-container__article-container">
+                <div class="main-container__opt-container__article-container__info">
+                    <h2>Static Random Image</h3>
+                    <p>Get the same random image evert time based on a seed, by adding <code>/seed/{seed}</code> to the
+                        start of
+                        the url</p>
+                    <div class="main-container__opt-container__article-container__info__dark-container">
+                        <a href="#">https://picsum.photos/seed/picsum/200/300</a>
+                    </div>
+                </div>
+
+                <div class="main-container__opt-container__article-container__image">
+                    <img src="536/364?random=3" alt="image" />
+                </div>
+            </article>
+
+            <article class="main-container__opt-container__article-container">
+                <div class="main-container__opt-container__article-container__info">
+                    <h2>Grayscale</h3>
+                    <p>Get a grayscale image by appending <code>?grayscale</code> to the end of the url</p>
+                    <div class="main-container__opt-container__article-container__info__dark-container">
+                        <a href="#">https://picsum.photos/200/300?grayscale</a>
+                    </div>
+                </div>
+
+                <div class="main-container__opt-container__article-container__image">
+                    <img src="536/364?random=4" alt="image" />
+                </div>
+            </article>
+
+            <article class="main-container__opt-container__article-container">
+                <div class="main-container__opt-container__article-container__info">
+                    <h2>Blur</h3>
+                    <p>Get a blurred image by appending <code>?blur</code> to the end of the url</p>
+                    <div class="main-container__opt-container__article-container__info__dark-container">
+                        <a href="#">https://picsum.photos/200/300/?blur</a>
+                    </div>
+
+                    <p>You can adjust the amnount of blur by providing a number between <code>1</code> and
+                        <code>10</code>.
+                    </p>
+                    <div class="main-container__opt-container__article-container__info__dark-container">
+                        <a href="#">https://picsum.photos/200/300/?blur=2</a>
+                    </div>
+                </div>
+
+                <div class="main-container__opt-container__article-container__image">
+                    <img src="536/364?random=5" alt="image" />
+                </div>
+            </article>
+
+            <article class="main-container__opt-container__article-container">
+                <div class="main-container__opt-container__article-container__info">
+                    <h2>Advance Usage</h3>
+                    <p>You may combine any of the options above.</p>
+                    <p>For example, to get a specific image that is grayscale and blurred</p>
+                    <div class="main-container__opt-container__article-container__info__dark-container">
+                        <a href="#">https://picsum.photos/id/870/200/300?grayscale&blur=2</a>
+                    </div>
+
+                    <p>To request multiple images of the same size in your browser, add the <code>random</code> query to
+                        prevent the images from being cached</p>
+                    <div class="main-container__opt-container__article-container__info__dark-container">
+                        <code>&ltimg src="https://picsum.photos/200/300?random=1"&gt</code>
+                        <code>&ltimg src="https://picsum.photos/200/300?random=2"&gt</code>
+                    </div>
+
+                    <p>If you need a file ending, you can add <code>.jpg</code> to the end of the url.</p>
+                    <div class="main-container__opt-container__article-container__info__dark-container">
+                        <a href="#">https://picsum.photos/200/300.jpg</a>
+                    </div>
+
+                    <p>To get an image in the WebP format, you can add <code>.webp</code> to the end of the url.</p>
+                    <div class="main-container__opt-container__article-container__info__dark-container">
+                        <a href="#">https://picsum.photos/200/300.webp</a>
+                    </div>
+                </div>
+
+                <div class="main-container__opt-container__article-container__image">
+                    <img src="536/364?random=6" alt="image" />
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer class="footer-section">
+        <p class="footer-section__text">
+            Replica for educational purposes by Diego Morales
+        </p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,9 @@
 @import url('https://rsms.me/inter/inter.css');
 html { font-family: 'Inter', sans-serif; }
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap');
+$title-font: 'Work Sans', sans-serif;
+
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
