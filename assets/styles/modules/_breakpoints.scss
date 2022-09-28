@@ -2,7 +2,52 @@
 @import "variables";
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	header {
+		height: 8vh;
+	}
+
+	header > nav > ul {
+		font-size: 1rem;
+	}
+
+	h1 {
+		padding-top: 10vh;
+	}
+
+	main {
+		padding-bottom: 10vh;
+		padding-left: 8vw;
+		padding-right: 8vw;
+		grid-template-columns: 1fr 1fr;
+		row-gap: 3%;
+		column-gap: 1%;
+	}
+
+	main > p {
+		padding-top: 5%;
+		padding-bottom: 5%;
+		padding-left: 8%;
+		padding-right: 8%;
+		display: flex;
+		align-items: center;
+		font-size: 1.1rem;
+	}
+
+	.img-container > img {
+		height: 100%;
+		width: auto;
+	}
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+	.img-container > img {
+		height: auto;
+		width: 90%;
+	}
+
+	main > p {
+		font-size: 1.2rem;
+	}
+}
