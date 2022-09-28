@@ -42,4 +42,12 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+	.img-container > img {
+		height: auto;
+		width: 90%;
+	}
+
+	main > p {
+		font-size: 1.2rem;
+	}
 }
