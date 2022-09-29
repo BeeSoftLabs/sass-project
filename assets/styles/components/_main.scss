@@ -41,6 +41,11 @@
         padding-top: 100px;
         padding-bottom: 100px;
 
+        /* @include viewport-medium {
+            padding: 50px 120px;
+            margin: 100px auto;
+        } */
+
         &__article-container {
             padding-top: 100px;
             padding-bottom: 100px;
@@ -73,6 +78,10 @@
 
             &__image {
                 padding: 1rem;
+
+                @include viewport-medium {
+                    width: 70%;
+                }
             }
         }
     }

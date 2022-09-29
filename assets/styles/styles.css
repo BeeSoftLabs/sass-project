@@ -109,6 +109,10 @@ html {
   margin: 0;
   padding-top: 100px;
   padding-bottom: 100px;
+  /* @include viewport-medium {
+      padding: 50px 120px;
+      margin: 100px auto;
+  } */
 }
 .main-container__opt-container__article-container {
   padding-top: 100px;
@@ -130,6 +134,11 @@ html {
 }
 .main-container__opt-container__article-container__image {
   padding: 1rem;
+}
+@media (min-width: 768px) {
+  .main-container__opt-container__article-container__image {
+    width: 70%;
+  }
 }
 
 .footer-section {
@@ -175,6 +184,13 @@ html {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+@media (min-width: 768px) {
+  .header-container {
+    text-align: center;
+    padding: 50px 120px;
+    margin: 100px auto;
+  }
+}
 .header-container__hero {
   display: grid;
   gap: 30px;
@@ -186,9 +202,15 @@ html {
   padding-left: 20px;
   align-items: left;
 }
+@media (min-width: 768px) {
+  .header-container__hero__home {
+    align-items: center;
+  }
+}
 .header-container__hero__home__icon-title {
   display: flex;
   flex-direction: row;
+  /* justify-content: left; */
 }
 .header-container__hero__home__icon-title ion-icon {
   position: relative;
@@ -203,6 +225,7 @@ html {
   font-weight: 600;
 }
 .header-container__hero__home p {
+  margin: 10px;
   font-family: "Work Sans", sans-serif;
   font-size: 25px;
   font-weight: 300;

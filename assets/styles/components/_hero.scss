@@ -6,6 +6,12 @@
     margin-top: 100px;
     margin-bottom: 100px;
 
+    @include viewport-medium {
+        text-align: center;
+        padding: 50px 120px;
+        margin: 100px auto;
+    }
+
     &__hero {
         display: grid;
         gap: 30px;
@@ -17,9 +23,14 @@
             padding-left: 20px;
             align-items: left;
 
+            @include viewport-medium {
+                align-items: center;
+            }
+
             &__icon-title {
                 display: flex;
                 flex-direction: row;
+                /* justify-content: left; */
 
                 ion-icon {
                     position: relative;
@@ -37,6 +48,7 @@
             }
 
             p {
+                margin: 10px;
                 font-family: $title-font;
                 font-size: 25px;
                 font-weight: 300;
