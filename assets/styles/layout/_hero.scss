@@ -1,0 +1,29 @@
+@use "../modules/variables" as v;
+@use "../modules/mixins" as m;
+
+.hero {
+  text-align: center;
+
+  &__branding {
+    display: grid;
+    place-content: center;
+
+    img {
+      place-self: center;
+      width: 42px;
+      height: 42px;
+    }
+    h1 {
+      padding-inline: 1rem;
+    }
+
+    @include m.media("medium") {
+      grid-template-columns: auto auto;
+    }
+  }
+
+  h2 {
+    font-family: v.$font-open-sans;
+    font-size: 1.5rem;
+  }
+}
