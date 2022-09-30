@@ -128,6 +128,8 @@ html {
 .main-container__opt-container__article-container {
   padding-top: 100px;
   padding-bottom: 100px;
+  display: grid;
+  place-items: center;
 }
 @media (min-width: 1366px) {
   .main-container__opt-container__article-container {

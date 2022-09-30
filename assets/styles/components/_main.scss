@@ -59,6 +59,8 @@
         &__article-container {
             padding-top: 100px;
             padding-bottom: 100px;
+            display: grid;
+            place-items: center;
 
             @include viewport-large {
                 display: grid;
@@ -104,6 +106,7 @@
 
             
             &__image {
+                
                 padding: 1rem;
 
                 @include viewport-medium {
