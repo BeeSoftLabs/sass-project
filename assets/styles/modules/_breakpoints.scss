@@ -3,6 +3,19 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+	body {
+		display: flex;
+		justify-content: center;
+	}
+	.double-column-cell {
+		// margin-left: -5vw;
+		width: 100%;
+	}
+
+	main {
+		width: 700px;
+		height: auto;
+	}
 }
 
 // Large devices (desktops, 992px and up)

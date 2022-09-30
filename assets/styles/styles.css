@@ -6,6 +6,7 @@
   padding: 0;
   text-decoration: none;
   text-rendering: optimizeLegibility;
+  text-align: center;
 }
 
 h1,
@@ -49,6 +50,7 @@ main {
   text-align: left;
   display: grid;
   grid-template-columns: 100%;
+  border: 1px red solid;
 }
 
 .text-container {
@@ -101,6 +103,19 @@ footer {
   justify-content: center;
 }
 
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .double-column-cell {
+    width: 100%;
+  }
+  main {
+    width: 700px;
+    height: auto;
+  }
+}
 html {
   font-family: "Inter", sans-serif;
 }
