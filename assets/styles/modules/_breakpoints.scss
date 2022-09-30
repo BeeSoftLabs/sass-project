@@ -20,4 +20,29 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+	main {
+		padding-left: 5%;
+		padding-right: 5%;
+		text-align: left;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-area: "left rigth" "double" "left rigth" "left rigth" "left rigth"
+			"left rigth" "left rigth" "left rigth" "footer";
+		width: 990px;
+		height: auto;
+		margin-top: 20vh;
+	}
+
+	#second-cell,
+	footer {
+		grid-column: 1 / span 2;
+	}
+
+	#first-cell {
+		margin-top: 0;
+	}
+	#first-cell > p,
+	h1 {
+		text-align: start;
+	}
 }

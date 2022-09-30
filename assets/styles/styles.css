@@ -6,7 +6,6 @@
   padding: 0;
   text-decoration: none;
   text-rendering: optimizeLegibility;
-  text-align: center;
 }
 
 h1,
@@ -50,7 +49,6 @@ main {
   text-align: left;
   display: grid;
   grid-template-columns: 100%;
-  border: 1px red solid;
 }
 
 .text-container {
@@ -93,7 +91,7 @@ img {
 
 footer {
   height: 20vh;
-  width: 90%;
+  width: 100%;
   background-color: black;
   color: white;
   text-align: center;
@@ -101,6 +99,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 5px;
 }
 
 @media (min-width: 768px) {
@@ -114,6 +113,30 @@ footer {
   main {
     width: 700px;
     height: auto;
+  }
+}
+@media (min-width: 992px) {
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-area: "left rigth" "double" "left rigth" "left rigth" "left rigth" "left rigth" "left rigth" "left rigth" "footer";
+    width: 990px;
+    height: auto;
+    margin-top: 20vh;
+  }
+  #second-cell,
+footer {
+    grid-column: 1/span 2;
+  }
+  #first-cell {
+    margin-top: 0;
+  }
+  #first-cell > p,
+h1 {
+    text-align: start;
   }
 }
 html {
