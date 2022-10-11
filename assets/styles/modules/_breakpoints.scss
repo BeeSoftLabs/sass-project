@@ -1,10 +1,20 @@
 //BREAKPOINTS MOBILE FIRST
 @import "variables";
 
+.small {
+  margin-bottom: 1rem;
+}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    
+  .container {
+    max-width: 768px;
+  }
+  .hero__header {
+    grid-template-columns: auto auto;
+  }
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+}
